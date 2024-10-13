@@ -21,11 +21,11 @@ y = np.array(y).reshape(-1, 1)
 #y(t) = a0 – (a1*x+ a2*x**2+a3*x**3 ) – b*sin(c*x) where c= π/8
 
 #calculate squares of x
-x2 = x**2
+x2 = -x**2
 #calculate cubes of x
-x3 = x**3
+x3 = -x**3
 #calculate sin of x
-xsin = np.sin(np.pi/8*x)
+xsin = -np.sin(np.pi/8*x)
 #combine all features in one array
 X = np.column_stack((x, x2, x3, xsin))  
 
